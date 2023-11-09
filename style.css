@@ -108,7 +108,7 @@ a {
   background-color: rgba(0, 170, 191, 1);
   color: #ffffff;
   width: 153px;
-  height: 59px;
+  height: 42px;
   font-size: 14px;
   /* justify-content: center; */
   border: solid #ffffff 1px;
@@ -576,6 +576,51 @@ a {
   -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
 }
 
+.texto1 {
+  position: absolute;
+  margin-top: -360px;
+  margin-left: 458px;
+  width: 48%;
+  height: 349px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: all 1s;
+  align-content: center;
+  /* text-align: justify; */
+  line-height: 21px;
+  box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
+}
+
+.texto2 {
+  overflow: scroll;
+  position: absolute;
+  margin-top: -360px;
+  margin-left: 458px;
+  width: 48%;
+  height: 349px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: all 1s;
+  align-content: center;
+  /* text-align: justify; */
+  line-height: 21px;
+  box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
+}
+
 .intertexto {
   width: 100%;
   padding-top: 2%;
@@ -590,9 +635,37 @@ a {
   transform: translateY(-50%);
 }
 
+.parr2 {
+  width: 93%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-18%);
+}
+
+.parr3 {
+  width: 93%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
+}
+
 .conteima {
   width: 30%;
   margin-left: 67%;
+}
+
+.lot1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.imauni {
+  margin-top: 20px;
+  width: 36%;
 }
 
 .contimachild {
@@ -627,7 +700,7 @@ a {
 }
 
 .btn2 {
- padding-top: 20px;
+  padding-top: 20px;
 }
 
 .btn2:hover {
