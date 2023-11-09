@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="very-specific-design" id="very-specific-design">
+		<img src="logo-egade.png" alt="" class="logo-egade">
+        <iframe src="home.html" frameborder="0" width="100%" height="100%"></iframe>
+
+        <button class="js-toggle-fullscreen-btn toggle-fullscreen-btn" aria-label="Enter fullscreen mode" hidden>
+            <svg class="toggle-fullscreen-svg" width="28" height="28" viewBox="-2 -2 28 28">
+                <g class="icon-fullscreen-enter">
+                    <path d="M 2 9 v -7 h 7" />
+                    <path d="M 22 9 v -7 h -7" />
+                    <path d="M 22 15 v 7 h -7" />
+                    <path d="M 2 15 v 7 h 7" />
+                </g>
+                
+                <g class="icon-fullscreen-leave">
+                    <path d="M 24 17 h -7 v 7" />
+                    <path d="M 0 17 h 7 v 7" />
+                    <path d="M 0 7 h 7 v -7" />
+                    <path d="M 24 7 h -7 v -7" />
+                </g>
+            </svg>
+        </button>
+    </div>
+    
+</body>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+<script>if(document.fullscreenEnabled || document.webkitFullscreenEnabled) {
+	const toggleBtn = document.querySelector('.js-toggle-fullscreen-btn');
+
+	const styleEl = document.createElement('link');
+	styleEl.setAttribute('rel', 'stylesheet');
+	styleEl.setAttribute('href', 'https://codepen.io/tiggr/pen/poJoLyW.css');
+	styleEl.addEventListener('load', function() {
+		toggleBtn.hidden = false;
+	});
+	document.head.appendChild(styleEl);
+	
+	toggleBtn.addEventListener('click', function() {
+		if(document.fullscreen) {
+			document.exitFullscreen();
+		} else if(document.webkitFullscreenElement) {
+			document.webkitCancelFullScreen()
+		} else if(document.documentElement.requestFullscreen) {
+			document.documentElement.requestFullscreen();
+		} else {
+			document.documentElement.webkitRequestFullScreen();
+		}
+	});
+	
+	document.addEventListener('fullscreenchange', handleFullscreen);
+	document.addEventListener('webkitfullscreenchange', handleFullscreen);
+	
+	
+	function handleFullscreen() {
+		if(document.fullscreen || document.webkitFullscreenElement) {
+			toggleBtn.classList.add('on');
+			toggleBtn.setAttribute('aria-label', 'Exit fullscreen mode');
+		} else {
+			toggleBtn.classList.remove('on');
+			toggleBtn.setAttribute('aria-label', 'Enter fullscreen mode');
+		}
+	}
+};</script>
+</html>
