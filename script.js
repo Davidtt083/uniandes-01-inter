@@ -45,9 +45,9 @@ function mostrarp(divNum, btns, lot) {
 	document.getElementById("text2").classList.add("hide");
 	document.getElementById("text3").classList.add("hide");
 
-	document.getElementById("lot1").classList.add("hide");
+	/*document.getElementById("lot1").classList.add("hide");
 	document.getElementById("lot2").classList.add("hide");
-	document.getElementById("lot3").classList.add("hide");
+	document.getElementById("lot3").classList.add("hide");*/
 
 
 	document.getElementById("btn2").classList.remove("activo");
@@ -64,15 +64,15 @@ function mostrarp(divNum, btns, lot) {
 
 
 // Cargar la primera animación en el primer div
-var btn1 = document.getElementById('btn1');
+/*var btn1 = document.getElementById('btn1');
 var botonera = document.getElementById('botonera');
 var anim1 = bodymovin.loadAnimation({
 	container: div1,
 	renderer: 'svg',
-	loop: false,
-	autoplay: false,
+	loop: true,
+	autoplay: true,
 	path: 'pant1.json'
-});
+});*/
 
 // Cargar la segunda animación en el segundo div
 var div2 = document.getElementById('div2');

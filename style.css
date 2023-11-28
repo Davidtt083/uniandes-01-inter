@@ -105,7 +105,7 @@ a {
 }
 
 .conexto {
-  background-color: rgba(0, 170, 191, 1);
+  background-color: rgba(0, 138, 255, 0.8);
   color: #ffffff;
   width: 153px;
   height: 42px;
@@ -600,11 +600,12 @@ a {
 
 .texto2 {
   overflow: scroll;
+  overflow-x: hidden;
   position: absolute;
   margin-top: -360px;
-  margin-left: 458px;
-  width: 48%;
-  height: 349px;
+  margin-left: 27px;
+  width: 95%;
+  height: 381px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #000000;
   border-radius: 20px;
@@ -621,10 +622,58 @@ a {
   -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
 }
 
+.parr2_ima {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  margin-top: 10px;
+  /*transform: translateY(-39%);*/
+  display: flex;
+}
+
+.ima_der_01 {
+  margin-left: 10px;
+  width: 35%;
+  height: auto;
+}
+
+h2{
+  color: #008AFF;
+}
+.ima_der_02 {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 35%;
+  height: auto;
+}
+
+.ima_der_03 {
+  margin-right: 10px;
+  margin-top: 25px;
+  width: 235px;
+  height: 200px;
+}
+
+.ima_der_04 {
+  margin-right: 10px;
+  margin-top: 25px;
+  width: 35%;
+  height: 175px;
+}
+
+.mining_1 {
+  width: 80%;
+  text-align: justify;
+}
+
+.mining_2 {
+  width: 96%;
+  text-align: justify;
+}
+
 .intertexto {
   width: 100%;
   padding-top: 2%;
-  display: flex;
 }
 
 .parr {
@@ -640,15 +689,12 @@ a {
   margin: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-18%);
+  transform: translateY(-39%);
 }
 
 .parr3 {
-  width: 93%;
-  margin: 0;
+  width: 100%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-30%);
 }
 
 .conteima {
@@ -680,6 +726,13 @@ a {
 
 .justo {
   text-align: justify;
+
+}
+
+ul {
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .btn1 {
@@ -733,7 +786,7 @@ a {
   margin-left: 10px;
   width: 48%;
   height: 349px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 21, 255, 0.505);
   color: #000000;
   border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -751,8 +804,8 @@ a {
 
 .logo-egade {
   position: absolute;
-  width: 224px;
+  width: 93px;
   height: auto;
-  margin-top: 19px;
-  margin-left: 630px;
+  margin-top: 7px;
+  margin-left: 770px;
 }
