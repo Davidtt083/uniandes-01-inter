@@ -632,19 +632,28 @@ a {
 }
 
 .ima_der_01 {
-  margin-left: 10px;
-  width: 35%;
+  margin-left: 22px;
+  width: 22%;
   height: auto;
+  margin-top: -30px;
+}
+
+.ima_der_01_2 {
+  margin-left: 22px;
+  width: 45%;
+  height: auto;
+  margin-top: -30px;
 }
 
 h2{
   color: #008AFF;
 }
 .ima_der_02 {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: 35%;
+  margin-right: 9px;
+  margin-bottom: -6px;
+  width: 30%;
   height: auto;
+  margin-top: -34px;
 }
 
 .ima_der_03 {
@@ -656,9 +665,15 @@ h2{
 
 .ima_der_04 {
   margin-right: 10px;
-  margin-top: 25px;
-  width: 35%;
+  margin-top: 22px;
+  width: 24%;
   height: 175px;
+}
+
+.instruccion{
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .mining_1 {
